@@ -1,107 +1,63 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from 'react-emotion';
 
-import { colors } from '../theme';
-import Button from './Button';
+import { colors, styles } from '../theme';
 
 const Container = styled.header`
-  position: fixed;
-  width: 100vw;
-  height: 6rem;
-  background: linear-gradient(to right, ${colors.heading2}, ${colors.heading});
   display: flex;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 100vw;
+  height: 5rem;
+  border-bottom: 1px solid ${colors.black};
+  ${styles.stripeBackground};
 `;
 
 const Content = styled.div`
-  flex: 1;
   height: 100%;
-  box-sizing: border-box;
-  margin: 0 5rem;
-  max-width: 1300px;
+  background: ${colors.background};
+  font-weight: 200;
+  border-right: 1px solid ${colors.black};
+
+  &:first-child {
+    margin-right: 2rem;
+  }
+`;
+
+const ContactDetailsContainer = styled(Content)`
+  flex: 1;
   display: flex;
   align-items: center;
+  border-left: 1px solid ${colors.black};
   justify-content: flex-end;
+  padding-right: 2rem;
+  margin-right: 2rem;
 `;
 
-const NavWrapper = styled.div`
-  display: flex;
-  text-transform: uppercase;
-  margin-right: auto;
+const ContactDetail = styled.div`
+  display: inline-block;
+  border-right: 1px solid ${colors.black};
+  padding: 0 1rem;
 
-  a {
-    color: ${colors.copy};
-    margin: 0 0.75rem;
-    padding: 0.25rem;
-    text-decoration: none;
-
-    &.active {
-      border-bottom: 2px solid ${colors.copy};
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:hover {
-      -webkit-text-fill-color: transparent;
-      background: -webkit-linear-gradient(
-        right,
-        ${colors.accent},
-        ${colors.link}
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      box-decoration-break: clone;
-      text-shadow: none;
-
-      border-bottom-color: ${colors.link};
-    }
+  &:last-child {
+    border-right: none;
   }
 `;
-
-const TicketsButton = styled(Button)`
-  justify-self: flex-end;
-`;
-
-const links: Array<{ to: string; text: string }> = [
-  {
-    text: 'Home',
-    to: '/'
-  },
-  {
-    text: 'Speakers',
-    to: '/speakers'
-  },
-  {
-    text: 'Location',
-    to: '/location'
-  },
-  {
-    text: 'Schedule',
-    to: '/schedule'
-  },
-  {
-    text: 'Sponsors',
-    to: '/sponsors'
-  }
-];
 
 const Header = () => (
   <Container>
-    <Content>
-      <NavWrapper>
-        {links.map(link => (
-          <Link key={link.to} to={link.to} activeClassName="active">
-            {link.text}
-          </Link>
-        ))}
-      </NavWrapper>
-      <TicketsButton onClick={() => console.log('hello')}>
-        Tickets
-      </TicketsButton>
-    </Content>
+    <Content>hello</Content>
+    <ContactDetailsContainer>
+      <ContactDetail>Cihan Bebek</ContactDetail>
+      <ContactDetail>cihan.m.bebek@gmail.com</ContactDetail>
+      <ContactDetail>+44 77 8977 8865</ContactDetail>
+      <ContactDetail>
+        <a href="google.com">LinkedIn</a>
+      </ContactDetail>
+      <ContactDetail>
+        <a href="google.com">GitHub</a>
+      </ContactDetail>
+    </ContactDetailsContainer>
   </Container>
 );
 

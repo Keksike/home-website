@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Conf website'
+    title: 'Cihan'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,13 +14,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'conf website',
-        short_name: 'conf website',
+        name: 'cihan',
+        short_name: 'cihan',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png' // This path is relative to the root of the site.
+        display: 'minimal-ui'
       }
     },
     {
@@ -39,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Poppins:400,600']
+        fonts: ['Rubik:200,400,600', 'Roboto:200,400,600']
       }
     }
   ]

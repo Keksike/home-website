@@ -12,9 +12,6 @@ const PageContainer = styled.div`
 
 // To work with fixed header
 const ContentContainer = styled.div`
-  margin: 0 5rem;
-  padding-top: 6rem;
-  max-width: 1300px;
   flex: 1;
 `;
 
