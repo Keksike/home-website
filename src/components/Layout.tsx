@@ -14,10 +14,10 @@ const PageContainer = styled.div`
 // To work with fixed header
 const ContentContainer = styled.div`
   flex: 1;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 
   ${screenSizes.onlyMobile} {
-    padding: 4rem 1rem;
+    padding: 1rem;
   }
 `;
 

@@ -18,10 +18,6 @@ const ContentContainer = styled.div`
   background: ${colors.background};
   font-weight: 200;
   border-right: 1px solid ${colors.black};
-
-  &:first-child {
-    margin-right: 2rem;
-  }
 `;
 
 const TitleContainer = styled(ContentContainer)`
@@ -29,9 +25,16 @@ const TitleContainer = styled(ContentContainer)`
   font-size: 26px;
   justify-content: center;
   padding: 2rem;
+  margin-right: 1rem;
 
   ${screenSizes.belowDesktop} {
     padding: 1rem;
+  }
+
+  ${screenSizes.onlyMobile} {
+    font-size: 18px;
+    margin-right: 0.3rem;
+    padding: 1rem 0.5rem;
   }
 `;
 
@@ -52,6 +55,11 @@ const ContactDetailsContainer = styled(ContentContainer)`
     align-items: flex-end;
     margin-right: 0;
     border-right: none;
+  }
+
+  ${screenSizes.onlyMobile} {
+    font-size: 14px;
+    padding: 1rem 0.5rem;
   }
 `;
 

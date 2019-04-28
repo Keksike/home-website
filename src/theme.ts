@@ -50,6 +50,10 @@ injectGlobal`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  p {
+    line-height: 1.3rem;
+  }
+
   h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-weight: normal;
