@@ -78,3 +78,38 @@ injectGlobal`
     
   }
 `;
+
+export const breakpoints = {
+  xs: 0,
+  mobile: 300,
+  tablet: 600,
+  tabletLandscape: 900,
+  mediumScreen: 1200,
+  largeScreen: 1800
+};
+
+const cssRulePrefix = '@media screen and';
+
+export const screenSizes = {
+  onlyMobile: `${cssRulePrefix} (max-width: ${breakpoints.tablet}px)`,
+  onlyTablet: `${cssRulePrefix} (max-width: ${
+    breakpoints.mediumScreen
+  }px) and (min-width: ${breakpoints.tablet}px)`,
+  onlyTabletLandscape: `${cssRulePrefix} (max-width: ${
+    breakpoints.mediumScreen
+  }px) and (min-width: ${breakpoints.tabletLandscape}px)`,
+  onlyTabletPortrait: `${cssRulePrefix} (max-width: ${
+    breakpoints.tabletLandscape
+  }px) and (min-width: ${breakpoints.tablet}px)`,
+  belowTabletLandscape: `${cssRulePrefix} (max-width: ${
+    breakpoints.tabletLandscape
+  }px)`,
+  aboveTabletLandscape: `${cssRulePrefix} (min-width: ${
+    breakpoints.tabletLandscape
+  }px)`,
+  aboveTablet: `${cssRulePrefix} (min-width: ${breakpoints.tablet}px)`,
+  onlyDesktop: `${cssRulePrefix} (min-width: ${breakpoints.mediumScreen}px)`,
+  onlyLargeScreen: `${cssRulePrefix} (min-width: ${breakpoints.largeScreen}px)`,
+  belowDesktop: `${cssRulePrefix} (max-width: ${breakpoints.mediumScreen}px)`,
+  belowLargeScreen: `${cssRulePrefix} (max-width: ${breakpoints.largeScreen}px)`
+};

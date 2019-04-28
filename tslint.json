@@ -6,7 +6,8 @@
     "jsx-no-lambda": false,
     "object-literal-sort-keys": false,
     "no-console": false,
-    "member-access": false
+    "member-access": false,
+    "ordered-imports": false
   },
   "rulesDirectory": []
 }

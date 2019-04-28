@@ -11,6 +11,7 @@ const ContentContainer = styled.div`
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  background-color: red;
 `;
 
 const IndexPage = () => (
