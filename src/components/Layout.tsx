@@ -17,7 +17,7 @@ const ContentContainer = styled.div`
   padding: 3rem 2rem;
 
   ${screenSizes.onlyMobile} {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 `;
 

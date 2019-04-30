@@ -61,6 +61,18 @@ const ContactDetailsContainer = styled(ContentContainer)`
     font-size: 14px;
     padding: 1rem 0.5rem;
   }
+
+  a {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(
+      115deg,
+      ${colors.accent},
+      ${colors.link}
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-decoration-break: clone;
+  }
 `;
 
 const ContactDetail = styled.span`

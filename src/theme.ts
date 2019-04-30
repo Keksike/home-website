@@ -10,7 +10,12 @@ export const colors = {
   accentDarker: darken(0.15, '#ff8a00'),
   black: '#000',
   link: '#0A60EA',
-  highlight: '#39b5f1'
+  highlight: '#39b5f1',
+  darkGrey: '#4c5356',
+  mediumGrey: '#a8adb3',
+  lightGrey: '#d8d8d8',
+  lighterGrey: '#f2f2f2',
+  bgGrey: '#f8f8f8'
 };
 
 export const sizes = {
@@ -19,7 +24,8 @@ export const sizes = {
   titleBig: '54px',
   titleMedium: '36px',
   titleSmall: '22px',
-  titleHuge: '90px'
+  titleHuge: '90px',
+  titleSmallest: '15px'
 };
 
 const stripeBackground = css`
@@ -28,8 +34,14 @@ const stripeBackground = css`
   background-size: 18px auto;
 `;
 
+const stripeBackgroundLarge = css`
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' style='enable-background:new 0 0 30 30;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0{clip-path:url(%23SVGID_2_);} .st1{fill:none;stroke:%23000000;stroke-width:2;stroke-miterlimit:10;} %3C/style%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='30' height='30'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E%3C/clipPath%3E%3Cg class='st0'%3E%3Cline class='st1' x1='-31.2' y1='31.2' x2='5.2' y2='-5.2'/%3E%3Cline class='st1' x1='-16.2' y1='31.2' x2='20.2' y2='-5.2'/%3E%3Cline class='st1' x1='-1.2' y1='31.2' x2='35.2' y2='-5.2'/%3E%3Cline class='st1' x1='13.8' y1='31.2' x2='50.2' y2='-5.2'/%3E%3Cline class='st1' x1='28.8' y1='31.2' x2='65.2' y2='-5.2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 18px auto;
+`;
+
 export const styles = {
-  stripeBackground
+  stripeBackground,
+  stripeBackgroundLarge
 };
 
 // tslint:disable-next-line:no-unused-expression
@@ -70,16 +82,13 @@ injectGlobal`
   h3 {
     font-size: ${sizes.titleSmall}
   }
+  
+  h4 {
+    font-size: ${sizes.titleSmallest}
+  }
 
   a {
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(115deg, ${colors.accent}, ${
-  colors.link
-});
-    background-clip: text;
-    -webkit-background-clip: text;
-    box-decoration-break: clone;
-    
+    text-decoration: none;
   }
 `;
 
