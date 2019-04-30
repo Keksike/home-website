@@ -7,7 +7,11 @@ const Container = styled.a`
   display: flex;
   flex-direction: column;
   border: 1px solid ${colors.black};
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+
+  ${screenSizes.onlyMobile} {
+    margin-bottom: 1rem;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -15,29 +19,35 @@ const Container = styled.a`
 
   p {
     color: ${colors.darkGrey};
+    margin-bottom: 1.5rem;
   }
 
   span {
     color: ${colors.mediumGrey};
   }
 
-  h4 {
-    margin-bottom: 0.5rem;
-  }
-
   &:hover {
-    h3,
-    h4 {
+    .title-container {
       -webkit-text-fill-color: transparent;
       background: -webkit-linear-gradient(
         115deg,
         ${colors.accent},
-        ${colors.highlight}
+        ${colors.link}
       );
       background-clip: text;
       -webkit-background-clip: text;
       box-decoration-break: clone;
     }
+  }
+`;
+
+const TitleContainer = styled.div`
+  h3 {
+    margin-bottom: 0.2rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
   }
 `;
 
@@ -52,7 +62,7 @@ const CornerStripes = styled.div`
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
-  ${styles.stripeBackground}
+  ${styles.stripeBackgroundLarge}
 `;
 
 const ContentContainer = styled.div`
@@ -68,18 +78,18 @@ const ContentContainer = styled.div`
 
 const Date = styled.span`
   font-size: 15px;
+  margin-top: 0.18rem;
 `;
 
 const ReadOnText = styled.span`
   font-size: 12px;
-  margin-bottom: 1rem;
 
   span {
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(
       115deg,
       ${colors.accent},
-      ${colors.highlight}
+      ${colors.link}
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -105,12 +115,15 @@ const BlogPost = (props: IProps) => {
         <Date>{date.toDateString()}</Date>
       </DateContainer>
       <ContentContainer>
-        <h3>{title}</h3>
-        <h4>{subTitle}</h4>
-        <ReadOnText>
-          Read on <span>medium.com</span>...
-        </ReadOnText>
+        <TitleContainer className="title-container">
+          <h3>{title}</h3>
+          <h4>{subTitle}</h4>
+        </TitleContainer>
+
         <p>{sampleText}</p>
+        <ReadOnText>
+          Read on <span>medium.com</span>
+        </ReadOnText>
       </ContentContainer>
     </Container>
   );

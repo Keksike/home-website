@@ -64,7 +64,7 @@ const BlogPosts = styled.div`
 const StripedBackground = styled.div`
   flex: 1;
   margin-left: 2rem;
-  ${styles.stripeBackgroundLarge}
+  ${styles.stripeBackground}
 
   ${screenSizes.belowTabletLandscape} {
     display: none;
@@ -74,9 +74,9 @@ const StripedBackground = styled.div`
 
 const blogPosts = [
   {
-    title: 'Consult or con-$lut:',
+    title: 'Consult or con-$ult:',
     subTitle:
-      "A theory on how Hertz' inexperience in buying software & Accenture's incompetence to deliver it flushed $32m+ down the drain",
+      "A theory on how Hertz's inexperience in buying software & Accenture's incompetence to deliver it flushed $32m+ down the drain",
     sampleText:
       'Lorem ipsum dolor sit amet, orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet... ',
     link: 'http://google.com',
