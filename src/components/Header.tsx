@@ -106,7 +106,7 @@ const Header = () => (
     <ContactDetailsContainer>
       <ResponsiveContactDetail>Cihan Bebek</ResponsiveContactDetail>
       <ResponsiveContactDetail>cihan.m.bebek@gmail.com</ResponsiveContactDetail>
-      <ResponsiveContactDetail>+44 77 8977 8865</ResponsiveContactDetail>
+      <ResponsiveContactDetail>+358 50 476 9925</ResponsiveContactDetail>
       <div>
         <ContactDetail>
           <a target="_blank" href="https://twitter.com/cihanbebek">

@@ -9,7 +9,8 @@ const Container = styled.a`
   background-color: #fff;
   border: 1px solid ${colors.black};
   opacity: 1;
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
 
   p {
     color: ${colors.darkGrey};
