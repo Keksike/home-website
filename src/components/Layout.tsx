@@ -6,6 +6,10 @@ import Helmet from 'react-helmet';
 import { screenSizes } from '../theme';
 import Header from './Header';
 
+import favicon16 from '../images/favicon/favicon-16x16.png';
+import favicon32 from '../images/favicon/favicon-32x32.png';
+import favicon96 from '../images/favicon/favicon-96x96.png';
+
 const PageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -34,7 +38,24 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
     `}
     render={data => (
       <>
-        <Helmet title={data.site.siteMetadata.title}>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          link={[
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '16x16',
+              href: `${favicon16}`
+            },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '32x32',
+              href: `${favicon32}`
+            },
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` }
+          ]}
+        >
           <html lang="en" />
         </Helmet>
         <Header />
