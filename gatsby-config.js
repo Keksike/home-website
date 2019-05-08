@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'blueprinted'
+    title: 'blueprinted consulting'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,8 +14,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'blueprinted',
-        short_name: 'blueprinted',
+        name: 'blueprinted consulting',
+        short_name: 'blueprinted consulting',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
