@@ -83,12 +83,17 @@ const ContactDetail = styled.span`
     border-right: none;
     padding-right: 0;
   }
+
+  ${screenSizes.onlyMobile} {
+    padding: 0 0.5rem;
+  }
 `;
 
 const ResponsiveContactDetail = styled(ContactDetail)`
   ${screenSizes.belowTabletLandscape} {
     border: none;
     padding: 0;
+    margin-bottom: 0.2rem;
   }
 `;
 
