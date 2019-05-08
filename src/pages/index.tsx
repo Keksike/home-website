@@ -61,6 +61,19 @@ const BlogPosts = styled.div`
   }
 `;
 
+const BlogPostContainer = styled.div`
+  ${styles.stripeBackgroundLarge}
+  margin-bottom: 2rem;
+
+  ${screenSizes.onlyMobile} {
+    margin-bottom: 1rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+
 const StripedBackground = styled.div`
   flex: 1;
   margin-left: 2rem;
@@ -100,7 +113,9 @@ const IndexPage = () => (
         <div>
           <BlogPosts>
             {blogPosts.map(post => (
-              <BlogPost {...post} />
+              <BlogPostContainer>
+                <BlogPost {...post} />
+              </BlogPostContainer>
             ))}
             {blogPosts.map(post => (
               <BlogPost {...post} />

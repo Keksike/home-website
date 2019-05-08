@@ -6,16 +6,10 @@ import { colors, screenSizes, styles } from '../theme';
 const Container = styled.a`
   display: flex;
   flex-direction: column;
+  background-color: #fff;
   border: 1px solid ${colors.black};
-  margin-bottom: 2rem;
-
-  ${screenSizes.onlyMobile} {
-    margin-bottom: 1rem;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  opacity: 1;
+  transition-duration: 0.5s;
 
   p {
     color: ${colors.darkGrey};
@@ -27,6 +21,8 @@ const Container = styled.a`
   }
 
   &:hover {
+    transform: translate(0.5rem, 0.5rem);
+
     .title-container {
       -webkit-text-fill-color: transparent;
       background: -webkit-linear-gradient(
@@ -62,7 +58,7 @@ const CornerStripes = styled.div`
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
-  ${styles.stripeBackgroundLarge}
+  ${styles.stripeBackgroundLargeColor}
 `;
 
 const ContentContainer = styled.div`
