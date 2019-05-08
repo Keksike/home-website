@@ -104,6 +104,11 @@ const Header = () => (
       <ResponsiveContactDetail>+44 77 8977 8865</ResponsiveContactDetail>
       <div>
         <ContactDetail>
+          <a target="_blank" href="https://twitter.com/cihanbebek">
+            Twitter
+          </a>
+        </ContactDetail>
+        <ContactDetail>
           <a target="_blank" href="https://www.linkedin.com/in/cihan-bebek/">
             LinkedIn
           </a>
