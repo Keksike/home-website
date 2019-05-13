@@ -87,12 +87,13 @@ const StripedBackground = styled.div`
 
 const blogPosts = [
   {
-    title: 'Consult or con-$ult:',
+    title: 'Consulting or con-$ulting:',
     subTitle:
-      "A theory on how Hertz's inexperience in buying software & Accenture's incompetence to deliver it flushed $32m+ down the drain",
+      'A theory on how Hertz’s inexperience in buying software — combined with Accenture’s incompetence to deliver it — flushed $32M+ down the drain',
     sampleText:
-      'Lorem ipsum dolor sit amet, orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet... ',
-    link: 'http://google.com',
+      'The article by The Register regarding Hertz suing Accenture over their failed website revamp deal has gained a lot of attention on social media creating a lot of discussion around failed...',
+    link: 'https://hackernoon.com/consulting-or-con-sulting-e5b7567bb6be',
+    linkText: 'hackernoon.com',
     date: new Date()
   }
 ];
@@ -116,9 +117,6 @@ const IndexPage = () => (
               <BlogPostContainer>
                 <BlogPost {...post} />
               </BlogPostContainer>
-            ))}
-            {blogPosts.map(post => (
-              <BlogPost {...post} />
             ))}
           </BlogPosts>
           <StripedBackground />

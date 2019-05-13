@@ -9,7 +9,7 @@ const Container = styled.a`
   background-color: #fff;
   border: 1px solid ${colors.black};
   opacity: 1;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
 
   p {
@@ -100,13 +100,14 @@ interface IProps {
   link: string;
   sampleText: string;
   date: Date;
+  linkText: string;
 }
 
 const BlogPost = (props: IProps) => {
-  const { title, subTitle, link, sampleText, date } = props;
+  const { title, subTitle, link, sampleText, date, linkText } = props;
 
   return (
-    <Container href={link}>
+    <Container href={link} target="_blank">
       <DateContainer>
         <CornerStripes />
         <Date>{date.toDateString()}</Date>
@@ -119,7 +120,7 @@ const BlogPost = (props: IProps) => {
 
         <p>{sampleText}</p>
         <ReadOnText>
-          Read on <span>medium.com</span>
+          Read on <span>{linkText}</span>
         </ReadOnText>
       </ContentContainer>
     </Container>
