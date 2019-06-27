@@ -123,6 +123,14 @@ const Header = () => (
             GitHub
           </a>
         </ContactDetail>
+        <ContactDetail>
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1GpwyPIuKS0ws67pyPoPYmtx2UYD8CEv1sXNjm6GvTn4/edit"
+          >
+            CV
+          </a>
+        </ContactDetail>
       </div>
     </ContactDetailsContainer>
   </Container>
