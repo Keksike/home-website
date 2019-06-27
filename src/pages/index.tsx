@@ -26,7 +26,7 @@ const ContentContainer = styled.div`
 const MeTitleContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   max-width: 43rem;
 
   img {
@@ -61,7 +61,7 @@ const MeTitleContainer = styled.div`
 `;
 
 const DescriptionContainer = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   max-width: 43rem;
 
   h3 {
@@ -198,8 +198,9 @@ const IndexPage = () => (
         <div>
           <h3>Interested in working with me?</h3>
           <p>
-            Feel free to give me a <a href="tel:+358504769925">call</a>, send me
-            an <a href="mailto:cihan.m.bebek@gmail.com">email</a> or add me on{' '}
+            Great! Feel free to give me a <a href="tel:+358504769925">call</a>,
+            send me an <a href="mailto:cihan.m.bebek@gmail.com">email</a> or add
+            me on{' '}
             <a target="_blank" href="https://www.linkedin.com/in/cihan-bebek/">
               LinkedIn
             </a>
