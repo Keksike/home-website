@@ -85,8 +85,12 @@ const DescriptionContainer = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-weight: lighter;
+  }
+
+  > div {
+    padding-bottom: 1.5rem;
   }
 
   div:nth-child(1) {
@@ -175,24 +179,36 @@ const IndexPage = () => (
             I'm a freelance Software Developer currently based in{' '}
             <b>Tampere, Finland</b>.
           </p>
-          <p>Welcome to my website and blog!</p>
+          <p>Nice to meet you!</p>
         </div>
       </MeTitleContainer>
       <DescriptionContainer>
         <div>
-          <h3>Some cool stuff</h3>
+          <h3>I solve problems.</h3>
           <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
-            amet.
+            <b>
+              Web & mobile development. APIs. Cloud infrastructure. Modern
+              DevOps. Leading & enabling teams.
+            </b>{' '}
+            You name it, I'll do it.
+          </p>
+          <p>
+            During my years building software for some of the most recognizable
+            companies in Europe, I have learned to tackle problems small and
+            large.
           </p>
         </div>
         <div>
-          <h3>Some more cool stuff</h3>
+          <h3>I suit your needs.</h3>
           <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
-            amet.
+            Lately I have been working with{' '}
+            <b>
+              AWS, TypeScript, React, React Native, Node.js, Terraform,
+              Serverless and Docker
+            </b>{' '}
+            to name a few. But I don't really have strong opinions about any
+            certain technologies, they are just tools used to solve our
+            problems.
           </p>
         </div>
         <div>
