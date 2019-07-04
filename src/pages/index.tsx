@@ -214,13 +214,12 @@ const IndexPage = () => (
         <div>
           <h3>Interested in working with me?</h3>
           <p>
-            Great! Feel free to give me a <a href="tel:+358504769925">call</a>,
-            send me an <a href="mailto:cihan.m.bebek@gmail.com">email</a> or add
-            me on{' '}
+            Great! Feel free to send me an{' '}
+            <a href="mailto:cihan.m.bebek@gmail.com">email</a>, add me on{' '}
             <a target="_blank" href="https://www.linkedin.com/in/cihan-bebek/">
               LinkedIn
-            </a>
-            .
+            </a>{' '}
+            or give me a <a href="tel:+358504769925">call</a>.
           </p>
         </div>
       </DescriptionContainer>
