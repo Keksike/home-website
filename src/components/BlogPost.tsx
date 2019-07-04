@@ -6,7 +6,7 @@ import { colors, screenSizes, styles } from '../theme';
 const Container = styled.a`
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: ${colors.background};
   border: 1px solid ${colors.black};
   opacity: 1;
   transition-duration: 0.3s;
@@ -15,6 +15,7 @@ const Container = styled.a`
   p {
     color: ${colors.darkGrey};
     margin-bottom: 1.5rem;
+    font-weight: lighter;
   }
 
   span {
@@ -45,6 +46,7 @@ const TitleContainer = styled.div`
 
   h4 {
     margin-bottom: 1rem;
+    font-weight: lighter;
   }
 `;
 
@@ -80,6 +82,7 @@ const Date = styled.span`
 
 const ReadOnText = styled.span`
   font-size: 12px;
+  font-family: 'Raleway', sans-serif;
 
   span {
     -webkit-text-fill-color: transparent;

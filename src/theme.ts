@@ -1,4 +1,3 @@
-import { darken } from 'polished';
 import { css, injectGlobal } from 'react-emotion';
 
 export const colors = {
@@ -7,7 +6,12 @@ export const colors = {
   heading: '#461556',
   heading2: '#0a0042',
   accent: '#1EA7F5',
-  accentDarker: darken(0.15, '#ff8a00'),
+  orange: '#FB7D01',
+  red: '#E65251',
+  green: '#4E9873',
+  pink: '#E6C8C3',
+  darkBlue: '#261D58',
+  yellow: '#FED850',
   black: '#000',
   link: '#0A60EA',
   highlight: '#39b5f1',
@@ -22,7 +26,7 @@ export const sizes = {
   copy: '18px',
   title: '22px',
   titleBig: '54px',
-  titleMedium: '36px',
+  titleMedium: '30px',
   titleSmall: '22px',
   titleHuge: '90px',
   titleSmallest: '15px'
@@ -70,6 +74,7 @@ injectGlobal`
 
   p {
     line-height: 1.3rem;
+    font-family: 'Raleway', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6, p {
