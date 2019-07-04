@@ -41,6 +41,16 @@ const MeTitleContainer = styled.div`
     }
   }
 
+  ${screenSizes.onlyMobile} {
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+      height: 6rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
   p {
     line-height: 1.2;
     margin-bottom: 0.5rem;
