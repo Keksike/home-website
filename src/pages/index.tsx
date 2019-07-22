@@ -33,7 +33,7 @@ const MeTitleContainer = styled.div`
     height: 8rem;
     border-radius: 50%;
     padding: 0.3rem;
-    border: 1px solid ${colors.green};
+    border: 1px solid rgba(77, 180, 50, 0.3);
     margin-right: 2rem;
 
     ${screenSizes.onlyMobile} {

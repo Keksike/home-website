@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'blueprinted consulting'
+    title:
+      'Blueprinted Consulting - Software development from Tampere, Finland',
+    description:
+      'Blueprinted Consulting is a one-man software consultancy based in Tampere, Finland. Blueprinted offers web & mobile development, API development, cloud infrastructure & DevOps work.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'blueprinted consulting',
-        short_name: 'blueprinted consulting',
+        name: 'Blueprinted Consulting',
+        short_name: 'Blueprinted Consulting',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

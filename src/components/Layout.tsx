@@ -20,10 +20,17 @@ const ContentContainer = styled.div`
   flex: 1;
   padding: 3rem 2rem;
 
+  ${screenSizes.onlyTablet} {
+    padding: 1.5rem;
+  }
+
   ${screenSizes.onlyMobile} {
     padding: 1rem;
   }
 `;
+
+const DESCRIPTION =
+  'Blueprinted Consulting is a one-man software consultancy based in Tampere, Finland. Blueprinted offers web & mobile development, API development, cloud infrastructure & DevOps work.';
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <StaticQuery
