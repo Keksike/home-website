@@ -20,10 +20,17 @@ const ContentContainer = styled.div`
   flex: 1;
   padding: 3rem 2rem;
 
+  ${screenSizes.onlyTablet} {
+    padding: 1.5rem;
+  }
+
   ${screenSizes.onlyMobile} {
     padding: 1rem;
   }
 `;
+
+const DESCRIPTION =
+  'Blueprinted Consulting is a one-man software consultancy based in Tampere, Finland. Blueprinted offers web & mobile development, API development, cloud infrastructure & DevOps work.';
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <StaticQuery
@@ -54,6 +61,35 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
               href: `${favicon32}`
             },
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` }
+          ]}
+          meta={[
+            { name: 'title', content: data.site.siteMetadata.title },
+            {
+              name: 'description',
+              content: DESCRIPTION
+            },
+            {
+              property: 'og:title',
+              content: data.site.siteMetadata.title
+            },
+            {
+              property: 'og:url',
+              content: 'https://blueprinted.tech'
+            },
+            {
+              property: 'og:description',
+              content: DESCRIPTION
+            },
+            { property: 'twitter:card', content: 'summary_large_image' },
+            { property: 'twitter:url', content: URL },
+            {
+              property: 'twitter:title',
+              content: data.site.siteMetadata.title
+            },
+            {
+              property: 'twitter:description',
+              content: DESCRIPTION
+            }
           ]}
         >
           <html lang="en" />

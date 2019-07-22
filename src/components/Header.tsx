@@ -1,15 +1,28 @@
 import * as React from 'react';
 import styled from 'react-emotion';
 
-import { colors, styles, screenSizes } from '../theme';
+import { colors, screenSizes } from '../theme';
 
 const Container = styled.header`
   display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   width: 100vw;
-  border-bottom: 1px solid ${colors.black};
-  ${styles.stripeBackground};
+  border-bottom: 2px solid ${colors.lighterGrey};
+  padding: 1.5rem 4rem;
+  box-sizing: border-box;
+
+  ${screenSizes.belowDesktop} {
+    padding: 2rem;
+  }
+
+  ${screenSizes.onlyTablet} {
+    padding: 1.5rem;
+  }
+
+  ${screenSizes.onlyMobile} {
+    padding: 1rem;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -17,38 +30,26 @@ const ContentContainer = styled.div`
   align-items: center;
   background: ${colors.background};
   font-weight: 200;
-  border-right: 1px solid ${colors.black};
 `;
 
 const TitleContainer = styled(ContentContainer)`
   flex-direction: column;
   font-size: 26px;
   justify-content: center;
-  padding: 2rem;
-  margin-right: 1rem;
 
-  ${screenSizes.belowDesktop} {
-    padding: 1rem;
+  ${screenSizes.onlyTablet} {
+    font-size: 22px;
   }
 
   ${screenSizes.onlyMobile} {
-    font-size: 18px;
-    margin-right: 0.3rem;
-    padding: 1rem 0.5rem;
+    font-size: 20px;
   }
 `;
 
 const ContactDetailsContainer = styled(ContentContainer)`
   flex: 1;
-  border-left: 1px solid ${colors.black};
   justify-content: flex-end;
-  margin-right: 2rem;
   font-size: 16px;
-  padding: 2rem;
-
-  ${screenSizes.belowDesktop} {
-    padding: 1rem;
-  }
 
   ${screenSizes.belowTabletLandscape} {
     flex-direction: column;
@@ -59,7 +60,6 @@ const ContactDetailsContainer = styled(ContentContainer)`
 
   ${screenSizes.onlyMobile} {
     font-size: 14px;
-    padding: 1rem 0.5rem;
   }
 
   a {
