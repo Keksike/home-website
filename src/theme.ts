@@ -9,6 +9,7 @@ export const colors = {
   orange: '#FB7D01',
   red: '#E65251',
   green: '#4E9873',
+  lightGreen: '#2e9873',
   pink: '#E6C8C3',
   darkBlue: '#261D58',
   yellow: '#FED850',
@@ -56,6 +57,34 @@ export const styles = {
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('./assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html, body {
     min-height: 100vh;
     width: 100vw;

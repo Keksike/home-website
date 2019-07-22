@@ -29,7 +29,7 @@ const ContentContainer = styled.div`
   display: flex;
   align-items: center;
   background: ${colors.background};
-  font-weight: 200;
+  font-weight: lighter;
 `;
 
 const TitleContainer = styled(ContentContainer)`

@@ -37,12 +37,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-emotion`,
       options: {}
-    },
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: ['Rubik:200,400,600', 'Raleway:400,600']
-      }
     }
   ]
 };
