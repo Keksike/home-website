@@ -62,6 +62,35 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
             },
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` }
           ]}
+          meta={[
+            { name: 'title', content: data.site.siteMetadata.title },
+            {
+              name: 'description',
+              content: DESCRIPTION
+            },
+            {
+              property: 'og:title',
+              content: data.site.siteMetadata.title
+            },
+            {
+              property: 'og:url',
+              content: 'https://blueprinted.tech'
+            },
+            {
+              property: 'og:description',
+              content: DESCRIPTION
+            },
+            { property: 'twitter:card', content: 'summary_large_image' },
+            { property: 'twitter:url', content: URL },
+            {
+              property: 'twitter:title',
+              content: data.site.siteMetadata.title
+            },
+            {
+              property: 'twitter:description',
+              content: DESCRIPTION
+            }
+          ]}
         >
           <html lang="en" />
         </Helmet>
