@@ -213,12 +213,14 @@ const IndexPage = () => (
           <p>
             Lately I have been working with{' '}
             <b>
-              AWS, TypeScript, React, React Native, Node.js, Terraform,
+              TypeScript, React, React Native, Node.js, AWS, Terraform,
               Serverless and Docker
             </b>{' '}
-            to name a few. But I don't really have strong opinions about any
-            certain technologies, they are just tools used to solve our
-            problems.
+            to name a few.
+          </p>
+          <p>
+            But I enjoy working with all kinds of technologies, and I can pick
+            up the right tool for the task at hand.
           </p>
         </div>
         <div>
