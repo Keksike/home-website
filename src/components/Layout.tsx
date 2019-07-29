@@ -9,6 +9,7 @@ import Header from './Header';
 import favicon16 from '../images/favicon/favicon-16x16.png';
 import favicon32 from '../images/favicon/favicon-32x32.png';
 import favicon96 from '../images/favicon/favicon-96x96.png';
+import metatagImage from '../images/metatag.png';
 
 const PageContainer = styled.div`
   display: flex;
@@ -79,6 +80,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
             {
               property: 'og:description',
               content: DESCRIPTION
+            },
+            {
+              property: 'og:image',
+              itemProp: 'image',
+              content: `https://blueprinted.tech${metatagImage}`
+            },
+            {
+              property: 'twitter:image',
+              content: `https://blueprinted.tech${metatagImage}`
             },
             { property: 'twitter:card', content: 'summary_large_image' },
             { property: 'twitter:url', content: URL },
